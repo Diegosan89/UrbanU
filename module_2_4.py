@@ -7,7 +7,7 @@ is_prime = True
 
 for i in numbers:
     if i / 2 >= 1:
-        for j in range(2, i):
+        for j in range(2, i+1):
             if i % j == 0:
                 is_prime = False
                 break
