@@ -5,10 +5,10 @@ primes = []
 not_primes = []
 is_prime = True
 
-for i in numbers:
+or i in numbers:
     if i / 2 >= 1:
         for j in range(2, i+1):
-            if i % j == 0:
+            if i % j == 0 and i / j > 1:
                 is_prime = False
                 break
             else:
