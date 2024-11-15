@@ -5,19 +5,18 @@ primes = []
 not_primes = []
 is_prime = True
 
-or i in numbers:
-    if i / 2 >= 1:
-        for j in range(2, i+1):
-            if i % j == 0 and i / j > 1:
-                is_prime = False
-                break
-            else:
-                is_prime = True
-
-        if is_prime:
-            primes.append(i)
+for i in numbers[1:]:    
+    for j in range(2, i):
+        if i % j == 0:
+            is_prime = False
+            break
         else:
-            not_primes.append(i)
+            is_prime = True
+
+    if is_prime:
+        primes.append(i)
+    else:
+        not_primes.append(i)
 
 print('Primes: ', primes)
 print('Not Primes: ', not_primes)
