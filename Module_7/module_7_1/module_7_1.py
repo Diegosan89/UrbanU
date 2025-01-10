@@ -16,9 +16,9 @@ class Shop:
 
     def get_products(self):
         file = open(self.__file_name, 'r')
-        products = file.read()
-        return products
+        products = file.read()        
         file.close()
+        return products
 
     def add(self, *products):
         check_products_list = self.get_products()
@@ -42,4 +42,4 @@ print(p2)  # __str__
 
 s1.add(p1, p2, p3)
 
-print(s1.get_products())
+print(f'\n{s1.get_products()}')
