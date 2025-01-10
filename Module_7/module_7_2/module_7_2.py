@@ -2,15 +2,15 @@
 
 def custom_write(file_name, strings):
     string_number = 0
-    dict = {}
+    dict_ = {}
     for string in strings:
         file = open(file_name, 'a', encoding='utf-8')
         string_number += 1
         begin_byte = file.tell()
         file.write(f'{string}\n')
-        dict.update({(string_number, begin_byte): string})
+        dict_.update({(string_number, begin_byte): string})
         file.close()
-    return dict
+    return dict_
 
 
 info = [
