@@ -1,6 +1,1 @@
-<__main__.Product object at 0x000001EBFA66FEE0>
-<__main__.Product object at 0x000001EBFA66FE80>
-<__main__.Product object at 0x000001EBFA66FE20>
-Potato, 50.5, Vegetables
-Spaghetti, 3.4, Groceries
-Potato, 5.5, Vegetables
+
