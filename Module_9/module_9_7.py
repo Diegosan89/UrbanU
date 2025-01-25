@@ -11,7 +11,7 @@ def is_prime(function):
                 is_prime_ = False
                 break
 
-        if is_prime_ and result_ != 1:
+        if is_prime_ and result_ > 1:
             print('число простое')
 
         return result_
