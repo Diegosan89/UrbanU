@@ -8,8 +8,9 @@ print(list(map(lambda x, y: x == y, first, second)))
 
 def get_advanced_writer(file_name):
     def write_everything(*data_set):
-        with open(file_name, 'a', encoding='utf-8') as file:
-            file.write(f'{data_set}\n')
+        with open(file_name, 'w', encoding='utf-8') as file:
+            for data in data_set:
+                file.write(f'{data}\n')
 
     return write_everything
 
